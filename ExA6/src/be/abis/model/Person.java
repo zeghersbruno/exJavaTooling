@@ -2,21 +2,18 @@ package be.abis.model;
 
 import java.time.LocalDate;
 
+
 public class Person {
 	int personNumber;
 	String firstName;
 	String lastName;
 	LocalDate birthDate;
 	private Company company;
-	
 
-	public Company getCompany() {
-		return company;
+	public Person() {
+		
 	}
 
-	public void setCompany(Company company) {
-		this.company = company;
-	}
 
 	public Person(int personNumber, String firstName, String lastName, LocalDate birthDate, Company company) {
 		super();
@@ -59,5 +56,16 @@ public class Person {
 		this.birthDate = birthDate;
 	}
 	
+
+	public Company getCompany() {
+		return company;
+	}
+
+	public void setCompany(Company company) {
+		this.company = company;
+	}
 	
+	public String toString() {
+		return "FirstName : " + firstName + " LastName : " + lastName + " Company : " + company.getName();
+	}
 }

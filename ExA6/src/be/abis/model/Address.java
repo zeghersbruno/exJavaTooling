@@ -7,6 +7,11 @@ public class Address {
 	private String town;
 	private String country;
 	private String countryCode;
+	
+	public Address() {
+		
+	}
+	
 	public Address(String street, String nr, String zipCode, String town, String country, String countryCode) {
 		super();
 		this.street = street;
@@ -16,6 +21,7 @@ public class Address {
 		this.country = country;
 		this.countryCode = countryCode;
 	}
+	
 	public String getStreet() {
 		return street;
 	}
